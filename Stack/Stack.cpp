@@ -15,6 +15,10 @@ public:
 	int Peek();
 };
 
+/// <summary>
+/// Summart for Push Function
+/// </summary>
+/// <param name="data"></param>
 void Stack::Push(int data){
 	if (top == size) {
 		std::cout << "The Stack is Full" << std::endl;
@@ -25,6 +29,10 @@ void Stack::Push(int data){
 	stk[top] = data;
 }
 
+/// <summary>
+/// Function for Pop Function
+/// </summary>
+/// <returns></returns>
 int Stack::Pop() {
 	if (top == -1) {
 		std::cout << "Stack is Empty" << std::endl;
@@ -34,12 +42,21 @@ int Stack::Pop() {
 	return stk[top--];
 }
 
+/// <summary>
+/// Function for Peek function
+/// </summary>
+/// <returns></returns>
 int Stack::Peek() {
 	if (top == -1) {
 		return -1;
 	}
 	return stk[top];
 }
+
+/// <summary>
+/// Driver Code Starts from Here
+/// </summary>
+/// <returns></returns>
 int main()
 {
    
